@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<title>San Miguel's Exporta</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="{% static 'store/css/landing.css' %}" charset="utf-8"  />
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">SAN MIGUELS EXPORTA</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="{% url 'products' %}" class="w3-bar-item w3-button">Products</a>
+      <a href="#" class="w3-bar-item w3-button">Location</a>
+      <a href="#" class="w3-bar-item w3-button">Wholesale</a>
+      <a href="#" class="w3-bar-item w3-button">Making Process</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================           Header        ================ -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+
+
+  <img class="top" src={% static "/store/img/store.jpg" %}>
+
+
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1>SAN MIGUEL'S EXPORTA</h1>
+  </div>
+</header>
+
+<!--================  Page content ================ -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!--================  About Section ================ -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img class="w3-image" src={% static "/store/img/longhorn.jpg" width="600" height="750" %}>
+     
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Us</h1><br>
+      <p class="w3-large">San Miguel's Exporta was established in 1995, we are ceramic professionals that have many warehouse locations located in Mexico. You order and we serve. We ensure to only bring the highest quality products made from the <span class="w3-tag w3-light-grey">best materials</span> and hand artists.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+            The rich Talavera pottery heritage was introduced to Mexico by Spanish guild artisans of the Colonial period. Commonly called "majolica" in Spain, Mexican Talavera draws its name from the 16th century Spanish pottery center, Talavera de la Reina. 
+      </p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!--================  Menu Section ================ -->
+  <div class="w3-row w3-padding-64">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">We Offer</h1><br>
+      <h4>Handmade Pottery</h4>
+      <p class="w3-text-grey">High quality pottery carefuly crafted to perfection.</p><br>
+    
+      <h4>Home Decor</h4>
+      <p class="w3-text-grey">Our Talavera is coated with high gloss to prevent it from damage, can be displayed indoor and/or outdoor.</p><br>
+    
+      <h4>Glassware</h4>
+      <p class="w3-text-grey">We also provide our clients with glassware handcrafted to match talavera.</p><br>
+    
+      <h4>Wholesale Deals</h4>
+      <p class="w3-text-grey">Ask about our wholesale, we provide discounts for other businesses.</p><br>
+    
+      <h4>Preorder</h4>
+      <p class="w3-text-grey">We can order to make with specific details and colors. Restrictions apply.</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img class="w3-round w3-image w3-opacity-min" src={% static "/store/img/plates.jpg" style="width:100%" %}>
+      
+    </div>
+  </div>
+
+  <hr>
+
+  <!--================  Contact Section ================ -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We are here to answer any questions you may have about our products. We understand your needs and we are committed to satisfy the biggest criteria of them all, both look and quality. Reach out to us and we'll respond as soon as we can.</p>
+    <p class="w3-text-blue-grey w3-large"><b>920 S Harwood St, Dallas, TX 75201</b></p>
+    <p>You can also contact us by phone 469-499-4167 or email sanmiguels@gmail.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone" required name="Phone"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  
+</footer>
+
+</body>
+</html>
